@@ -1,0 +1,33 @@
+=> Acessar my sql
+mysql -h localhost -u root -p
+
+=> Mostrar banco de dados criados
+SHOW DATABASES;
+
+=> Como criar banco de dados
+CREATE DATABASE sistemaDeCadastro;
+
+=> Usar o banco de dados
+USE sistemaDeCadastro;
+
+=> Mostrar todas as tabelas criadas
+SHOW TABLES;
+
+=> Mostrar os dados da tabelas
+DESCRIBE usuarios;
+
+=> Listar todos os dados da tabelas
+SELECT * FROM usuarios;
+
+=> Listando dados com filtros de condição "WHERE"
+SELECT * FROM usuarios WHERE idade = 8;
+
+=> Listando dados com filtros maior ou menor
+SELECT * FROM usuarios WHERE idade > 8;
+SELECT * FROM usuarios WHERE idade < 20;
+
+=> Deletando registros (deve utilizar o WHERE)
+DELETE FROM usuarios WHERE nome = "Marry";
+
+=> Atualizando dados da tabela(deve utilizar o WHERE)
+UPDATE usuarios SET nome = "Nome de Teste" WHERE nome = "Yuri Carlos";
